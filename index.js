@@ -4,8 +4,8 @@ function buildHistogram(array) {
 }
 
 function canBuildNote(array, note) {
-  histogram = buildHistogram(array);
-  noteContent = buildHistogram(note.split(''));
+  const histogram = buildHistogram(array);
+  const noteContent = buildHistogram(note.split(''));
   noteContent.each(key, value => {
     if (histogram[key]) {
       if (histogram[key] === 0) {
