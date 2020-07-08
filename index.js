@@ -11,7 +11,7 @@ function buildHistogram(array) {
 }
 
 function canBuildNote(array, note) {
-  const histogram = buildHistogram(array);
+  let histogram = buildHistogram(array);
   const noteContent = buildHistogram(note.split('').filter(letter => letter !== ' '));
   let answer = true;
   for (var key in noteContent) {
