@@ -16,10 +16,10 @@ function canBuildNote(array, note) {
   let answer = true;
   for (var key in noteContent) {
     if (histogram[key]) {
-      if (histogram[key] === 0) {
-        asnwer = false
-      } else {
+      if (histogram[key] !== 0) {
         histogram[key] -= 1;
+      } else {
+        answer = false
       }
     } else {
       answer = false
