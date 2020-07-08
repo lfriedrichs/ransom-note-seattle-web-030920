@@ -1,6 +1,12 @@
 function buildHistogram(array) {
   const histogram = {}
-  array.forEach
+  array.forEach(l => {
+    if (histogram[l]) {
+      histogram[l] += 1;
+    } else {
+      histogram[l] = 1;
+    }
+  })
   return histogram
 }
 
