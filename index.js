@@ -13,20 +13,18 @@ function buildHistogram(array) {
 
 function canBuildNote(array, note) {
   let histogram = buildHistogram(array);
-  const noteContent = buildHistogram(note.split('').filter(letter => letter !== ' '));
+  const noteContent = note.split('').filter(letter => letter !== ' ');
   let answer = true;
-  for (var key in noteContent) {
+  noteContent.forEach( key => {
     if (histogram[key]) {
       if (histogram[key] !== 0) {
         histogram[key] = histogram[key] - 1;
-        console.log(histogram[key])
       } else {
         answer = false
-        console.log(false)
       }
     } else {
       answer = false
     }
-  }
+  })
   return answer
 }
