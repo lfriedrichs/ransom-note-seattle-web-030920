@@ -7,6 +7,7 @@ function buildHistogram(array) {
       histogram[l] = 1;
     }
   })
+  console.log(histogram)
   return histogram
 }
 
