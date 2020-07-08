@@ -25,10 +25,5 @@ describe('#canBuildNote', function() {
 		expect(canBuildNote(magazine, note)).toEqual(false)
 	})
 
-	it("returns true if can build the note", function() {
-		let magazine = ["h", "e", "r", "e", "a", "r", "e", "s", "o", "m",
-		"e", "n", "i", "c", "e", "c", "l", "o", "t", "h", "e", "s", "t"]
-		let note = "hereisat"
-		expect(canBuildNote(magazine, note)).toEqual(true)
-	})
+
 })
