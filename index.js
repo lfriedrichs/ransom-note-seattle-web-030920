@@ -1,5 +1,5 @@
 function buildHistogram(array) {
-  histogram = {}
+  const histogram = {}
   return histogram
 }
 
