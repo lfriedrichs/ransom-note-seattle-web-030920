@@ -21,6 +21,7 @@ function canBuildNote(array, note) {
         console.log(histogram[key])
       } else {
         answer = false
+        console.log(false)
       }
     } else {
       answer = false
