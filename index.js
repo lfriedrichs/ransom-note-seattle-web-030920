@@ -18,7 +18,6 @@ function canBuildNote(array, note) {
     if (histogram[key]) {
       if (histogram[key] !== 0) {
         histogram[key] -= 1;
-        console.log(histogram[key])
       } else {
         answer = false
         console.log(false)
